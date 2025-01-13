@@ -711,7 +711,8 @@ static CGFloat itemMargin = 5;
     if (indexPath.item == [self getAddMorePhotoCellIndex]) {
         TZAssetAddMoreCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TZAssetAddMoreCell" forIndexPath:indexPath];
         cell.imageView.image = tzImagePickerVc.addMorePhotoImage;
-        cell.tipLabel.text = [NSBundle tz_localizedStringForKey:@"Add more accessible photos"];
+        //Hide this because the words is cult in EN
+//        cell.tipLabel.text = [NSBundle tz_localizedStringForKey:@"Add more accessible photos"];
         cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
         cell.imageView.backgroundColor = [UIColor colorWithWhite:1.000 alpha:0.500];
         return cell;
